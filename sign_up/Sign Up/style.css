@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&family=Roboto+Slab:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Updock&display=swap');
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #659DBD;
+    --brand: rgba(9, 174, 239, 0.9);
+    --white: #fff;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #181f34, rgba(27, 31, 52, 0.05))
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: var(--brand);
+}
+
+.logo {
+    display: flex;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.logo span {
+    display: table-cell;
+    animation: animate 2s linear infinite;
+}
+
+.logo span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.logo span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.logo span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.logo span:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+.logo span:nth-child(5) {
+    animation-delay: 0.8s;
+}
+
+.logo span:nth-child(6) {
+    animation-delay: 1s;
+}
+
+@keyframes animate {
+    0%,
+    100% {
+        color: #fff;
+        filter: blur(2px);
+        text-shadow: 0 0 10px rgba(9, 174, 239, 0.9), 0 0 20px rgba(9, 174, 239, 0.9), 0 0 40px rgba(9, 174, 239, 0.9), 0 0 80px rgba(9, 174, 239, 0.9), 0 0 120px rgba(9, 174, 239, 0.9), 0 0 200px rgba(9, 174, 239, 0.9), 0 0 300px rgba(9, 174, 239, 0.9), 0 0 400px rgba(9, 174, 239, 0.9);
+    }
+    5%,
+    95% {
+        color: #fff;
+        filter: blur(0px);
+        text-shadow: 0 0 10px gone;
+    }
+}
+
+
+/* nav */
+
+
+/* button */
+
+.btn {
+    padding: 14px 36px;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    transition: 0.5s ease-in-out;
+    margin-bottom: 14px;
+    border-radius: 25px;
+    outline: none;
+    /* border: none; */
+}
+
+.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+
+.btn-outline-brand:hover {
+    background-color: var(--brand);
+}
+
+
+/* button */
+
+
+/* other content */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&family=Roboto&display=swap&effect=neon');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    overflow: hidden;
+    backdrop-filter: blur(25px);
+}
+
+#glitzy {
+    max-width: 900px;
+    min-height: 85vh;
+    width: 100%;
+    /* overflow: hidden; */
+    /* backdrop-filter: blur(25px); */
+}
+
+#glitzy video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#glitzy .ios {
+    position: relative;
+    top: 27px;
+    backdrop-filter: blur(8px);
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 45px rgb(0 0 0 / 10%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#glitzy .title {
+    color: #933ab6;
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    bottom: 5px;
+}
+
+#glitzy .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+}
+
+#glitzy form .user-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#glitzy form .user-details .input-box {
+    margin: 7px 0 7px 0;
+    width: calc(100% / 2 - 20px);
+}
+
+#glitzy form .user-details .input-box input,
+#glitzy form .user-details .input-box .option,
+#glitzy form .user-details .input-box .pos {
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border: .1px solid black;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: 0.3s ease-in-out;
+    background: transparent;
+}
+
+#glitzy form .user-details .input-box input::placeholder {
+    color: rgb(255 254 254);
+}
+
+#glitzy form .user-details .input-box .option {
+    height: 45px;
+    width: 100%;
+    color: rgb(255 254 254);
+    background: transparent;
+}
+
+#glitzy form .user-details .input-box .pos {
+    height: initial;
+    width: initial;
+    margin-top: 32px;
+    /* color: rgb(230, 225, 225); */
+    background: transparent;
+}
+
+#glitzy form .user-details .input-box .details {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #ccc;
+    /* color: rgb(230, 225, 225); */
+    background: transparent;
+}
+
+#glitzy form .user-details .input-box #ch {
+    color: rgb(230, 225, 225);
+}
+
+#glitzy section form .user-details .input-box input:hover,
+#glitzy form .user-details .input-box .option:hover,
+#glitzy form .user-details .input-box .pos:hover {
+    border-color: #9b59b6;
+    color: #d1a9e0;
+    font-weight: 700;
+}
+
+form .button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    margin: 10px 0;
+}
+
+form .button input {
+    height: 100%;
+    width: 22%;
+    outline: none;
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    background: linear-gradient(135deg, rgb(113, 183, 230), rgb(155, 89, 182));
+    transition: all 0.5s ease-in-out 0s;
+}
+
+form .button input:hover {
+    cursor: pointer;
+    background: linear-gradient(135deg, #51a8e2, #933ab6);
+}
+
+@media (max-width:584px) {
+    #glitzy {
+        max-width: 100%;
+    }
+    #glitzy form .user-details .input-box {
+        margin: 7px 0 7px 0;
+        width: 100%;
+    }
+    #glitzy video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        z-index: -1;
+    }
+    #glitzy form .user-details {
+        max-height: 500px;
+        overflow-y: scroll;
+    }
+    .user-details::-webkit-scrollbar {
+        width: 0;
+    }
+    form .button input {
+        width: 65%;
+    }
+}
+
+
+/* other content */
